@@ -1,0 +1,146 @@
+/* Wrapper */
+.resume-uploader-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.resume-uploader-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.uploader-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Form */
+.file-upload-form {
+  position: relative;
+  border: 2px dashed #007BFF;
+  border-radius: 15px;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  background-color: #ffffff;
+}
+
+.file-upload-form.drag-active {
+  background: #e0f7fa;
+  border-color: #00acc1;
+}
+
+/* Hidden file input */
+.file-input {
+  display: none;
+}
+
+/* Label inside form */
+.file-label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.file-upload-form:hover .file-label {
+  color: #007BFF;
+}
+
+/* Error message */
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/* File preview badge */
+.file-preview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.file-name {
+  font-weight: 600;
+}
+
+.file-size {
+  font-size: 12px;
+  color: #004d40;
+  background: #b2ebf2;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Add small animation when label text changes */
+.file-label span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.file-upload-form.drag-active .file-label span {
+  transform: scale(1.05);
+}
+
+/* Hover effect on wrapper */
+.resume-uploader-wrapper:hover {
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .resume-uploader-wrapper {
+    padding: 20px;
+  }
+
+  .uploader-title {
+    font-size: 24px;
+  }
+}
