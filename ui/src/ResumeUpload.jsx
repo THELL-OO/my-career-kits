@@ -71,17 +71,20 @@ const ResumeUploader = ({ onFileSubmit }) => {
     if (!fileObject) return;
 
     const formData = new FormData();
-    formData.append("resume", fileObject);
+    formData.append("resume_file", fileObject);
+
+    const options = {
+      method: 'POST', 
+      body: formData
+    }
 
     try {
-      const response = await fetch("http://localhost:5000/analyze", {
-        method: "POST",
-        body: formData,
-      });
+          const response = await fetch("http://localhost:8000/resume_analyze", options);
 
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
-      console.log("Backend response:", data);
+      console.log(data.filename)
+      // console.log("Backend response:", data);
       if (onFileSubmit) onFileSubmit(data); // optional callback to parent
     } catch (err) {
       console.error("Error uploading file:", err);
