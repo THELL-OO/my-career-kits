@@ -8,4 +8,7 @@ venv/
 
 # Ignore Jupyter notebooks folder
 back/jupyter/
+back/CVS/
+back/Clean_CV
+
 

@@ -21,7 +21,7 @@ async def resume(resume_file: UploadFile = File(...)):
          filename = resume_file.filename,
          size = resume_file.size,
          score = score,
-         message = 'resume_file received successfully'
+         message = 'resume_file received successfully!'
       )
    
    except Exception as e:
