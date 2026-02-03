@@ -1,0 +1,11 @@
+[33ma9f2ae3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Move model.safetensors to Git LFS
+[33m2794558[m Track model.safetensors with Git LFS
+[33m49c8695[m return
+[33m7c50ff6[m Create a pipeline and return similarity score
+[33m82f7ecd[m[33m ([m[1;31morigin/main[m[33m)[m Return similarity score to ui
+[33md3f7fe4[m Accept pdf, docx and txt and remove multiple spaces and character not in ascii
+[33m59eac99[m Store resume
+[33m0085861[m Add backend and receive file from frontend.
+[33m368e540[m add resume upload
+[33m479efa5[m create react
+[33m059ce0c[m venv and ui
