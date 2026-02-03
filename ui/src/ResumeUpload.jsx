@@ -84,6 +84,7 @@ const ResumeUploader = ({ onFileSubmit }) => {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
       console.log(data.filename)
+      console.log(data.score)
       // console.log("Backend response:", data);
       if (onFileSubmit) onFileSubmit(data); // optional callback to parent
     } catch (err) {
