@@ -5,11 +5,6 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  plugins: [react()],
-  server: {
-    // Add your domain here
-    allowedHosts: ['mycareerkits.com', 'localhost', '.mycareerkits.com']
-  },
   globalIgnores(['dist']),
   {
     files: ['**/*.{js,jsx}'],
