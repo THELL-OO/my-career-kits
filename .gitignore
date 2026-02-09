@@ -1,14 +1,5 @@
-# Ignore Python bytecode
-__pycache__/
-*.py[cod]
+backend/__pycache__/
+backend/*.py[cod]
 
-# Ignore virtual environment folder
-venv/
-*.venv
-
-# Ignore Jupyter notebooks folder
-back/jupyter/
-back/CVS/
-back/Clean_CV
-
-
+backend/venv/
+backend/*.venv
