@@ -1,1 +1,0 @@
-back/models/mpnet_local/model.safetensors filter=lfs diff=lfs merge=lfs -text
