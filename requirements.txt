@@ -11,7 +11,7 @@ seaborn
 notebook
 scikit-learn
 filetype
-pytesseract
+pytesseract 
 pillow
 optimum[openvino,nncf]
 umap-learn

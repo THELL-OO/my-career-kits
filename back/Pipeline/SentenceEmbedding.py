@@ -17,8 +17,12 @@ else:
 
 
 def sentence_embedding(text):
+  if not text or text.strip() == "":
+      return None
   doc = nlp(text)
   sentence_list = [sent.text.strip() for sent in doc.sents]
+  if len(sentence_list) == 0:
+      return None
   sentence_vector = model.encode(
                       sentence_list, 
                       output_value='sentence_embedding',
@@ -28,4 +32,6 @@ def sentence_embedding(text):
                       normalize_embeddings=True,
                       device='cpu'
                     )
+  if sentence_vector is None or len(sentence_vector) == 0:
+      return None
   return sentence_vector

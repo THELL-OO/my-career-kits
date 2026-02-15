@@ -13,4 +13,4 @@ def resume_pipeline(raw_text, resume_file):
 
   similarity_score = similarity(new_resume_vector) # similarity score of resume
 
-  return similarity_score
+  return similarity_score, cleaned_text
