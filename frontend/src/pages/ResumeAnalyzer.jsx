@@ -36,7 +36,7 @@ export default function ResumeAnalyzer() {
       setError("");
 
       const response = await fetch(
-        "https://api.mycareerkits.com/analyze-resume",
+        "http://localhost:8000/analyze-resume",
         {
           method: "POST",
           body: formData,

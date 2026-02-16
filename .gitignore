@@ -4,3 +4,4 @@
 venv/
 *.venv
 
+aws-ec2.pem
