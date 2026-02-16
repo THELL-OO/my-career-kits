@@ -4,14 +4,20 @@ from resume_router import router as resume_router
 
 app = FastAPI()
 
-app.include_router(resume_router)
+origins = [
+    "https://mycareerkits.com",
+    "https://www.mycareerkits.com",
+]
 
 app.add_middleware(
-  CORSMiddleware,
-  allow_origins = ['*'],
-  allow_methods = ['*'],
-  allow_headers = ['*']
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
+
+app.include_router(resume_router)
 
 @app.get('/')
 def read_root():
