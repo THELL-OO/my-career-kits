@@ -110,7 +110,7 @@ export default function ResumeAnalyzerPage() {
     try {
       const [, response] = await Promise.all([
         scanPromise,
-        fetch("http://localhost:8000/analyze-resume", {
+        fetch("https://api.mycareerkits.com/analyze-resume", {
           method: "POST",
           body: formData,
         }),
