@@ -308,9 +308,9 @@ export default function ResumeAnalyzerPage() {
                 Resume Score
               </h3>
               <div className="flex items-center gap-4">
-                <Progress value={result.score} className="h-3 flex-1" />
+                <Progress value={result.score * 100} className="h-3 flex-1" />
                 <span className="text-2xl font-bold text-primary">
-                  {result.score}/100
+                  {result.score.toFixed(2)}
                 </span>
               </div>
               <p className="mt-3 text-sm text-muted-foreground">{result.message}</p>
